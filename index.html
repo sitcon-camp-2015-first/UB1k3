@@ -3,24 +3,38 @@
 	<head>
 	<meta charset="utf-8"/>
 	<title>UBike Search!</title>
+
+	<!-- Load jQuery -->
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-	<!-- Load Custom CSS -->
-	<link rel="stylesheet" href="css/custom.css">
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<!-- Load jQuery -->
-	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<!-- Load AngularJS -->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	
+	<!-- Load Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!-- Load OpenWeatherMap SDK -->
+	<script type="text/javascript" src="https://raw.githubusercontent.com/sitcon-tw/summercamp-api-sdk/master/openweathermap-sdk.js"></script>
+	
+	<!-- Load tinyMap -->
+	<script src="https://raw.githubusercontent.com/essoduke/jQuery-tinyMap/master/jquery.tinyMap.min.js"></script>
+	
+	<!-- Load Custom JS -->
+	<script type="text/javascript" src="js/myApp.js"></script>
+
 	</head>
 	<body>
 		<div class="container">
 			<div class="jumbotron">
-				<h1>Hello World!</h1>
+				<h1>UB1k3!</h1>
+				<h1><small>Your best friend with UBike!</small></h1>
 			</div>
+
+			<div class="map"></div>
 		</div>
 	</body>
 </html>
