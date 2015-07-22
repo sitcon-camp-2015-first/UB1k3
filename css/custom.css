@@ -1,0 +1,23 @@
+#index_header{
+	max-height: 500px;
+	min-height: 300px;
+	background-image: url("http://i.ytimg.com/vi/TQpWdtMQNMA/maxresdefault.jpg");
+	background-repeat: no-repeat;
+	background-position:right;
+	background-color: black;
+}
+#index_title{
+	margin-top: 100px;
+	margin-left: 190px;
+	color: white;
+}
+#index_title_small {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 190px;
+	color: white;
+}
+
+.map {
+    height: 500px;
+}
