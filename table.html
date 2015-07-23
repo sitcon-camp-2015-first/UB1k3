@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>UB!k3 | Find Your Bike!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Load jQuery -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Load Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Load AngularJS -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <!-- Load Application-->
+    <script type="text/javascript" src="js/myAngular.js"></script>
+</head>
+
+<body ng-app="uBike" ng-controller="BikeListCtrl">
+    <div class="jumbotron" id="index_header">
+        <div class="container">
+            <h1 id="index_title">UB!k3</h1>
+            <h1 id="index_title_small"><small style="color: white">找到附近的 UBike 的小助手</small></h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-sm-12 col-md-12">
+            <p class="lead">請於空格中輸入欲查詢之站點&nbsp;<input type="text" ng-model="Location"/></p>
+        </div>
+        <div class="col-sm-12 col-md-12">
+            <table class="table">
+                <tr>
+                    <td>編號：</td>
+                    <td>地點：</td>
+                    <td>可租借車輛數：</td>
+                    <td>總停車格數：</td>
+                </tr>
+                <tr ng-repeat="bike in stationData | filter: Location ">
+                    <td>{{ bike.sno }}</td>
+                    <td>{{ bike.sna }}</td>
+                    <td>{{ bike.sbi }}</td>
+                    <td>{{ bike.tot }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="text-right">2015 ©  SITCON Camp</div>
+</body>
+
+</html>
